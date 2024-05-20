@@ -53,7 +53,8 @@ const Item: React.FC<AccordionItemProps> = ({
         "py-3",
         className
       )}
-    >{/* @ts-expect-error */}
+    >
+      {/* @ts-expect-error */}
       <AccordionPrimitive.Header className="px-1">
         <div className="flex flex-col">
           <div className="flex w-full items-center justify-between">

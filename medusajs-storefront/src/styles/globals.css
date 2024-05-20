@@ -109,4 +109,8 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
+
+  .link-footer{
+    @apply text-sm leading-3 text-white cursor-pointer transition-opacity hover:opacity-70;
+  }
 }

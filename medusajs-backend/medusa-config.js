@@ -72,6 +72,20 @@ const plugins = [
       },
     },
   },
+  {
+    resolve: `medusa-payment-stripe`,
+    options: {
+      api_key: process.env.STRIPE_API_KEY,
+      webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
+    },
+  },
+  {
+    resolve: `medusa-plugin-mailchimp`,
+    options: {
+      api_key: process.env.MAILCHIMP_API_KEY,
+      newsletter_list_id:process.env.MAILCHIMP_NEWSLETTER_LIST_ID,
+    }
+  }
 ];
 
 const modules = {
@@ -97,7 +111,7 @@ const projectConfig = {
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   // Uncomment the following lines to enable REDIS
-  redis_url: REDIS_URL
+  // redis_url: REDIS_URL
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
