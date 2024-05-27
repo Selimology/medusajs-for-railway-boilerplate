@@ -89,15 +89,17 @@ export async function addItem({
   cartId,
   variantId,
   quantity,
+  metadata,
 }: {
   cartId: string
   variantId: string
   quantity: number
+  metadata?:Record<string,unknown>
 }) {
   const headers = getMedusaHeaders(["cart"])
 
   return medusaClient.carts.lineItems
-    .create(cartId, { variant_id: variantId, quantity }, headers)
+    .create(cartId, { variant_id: variantId, quantity, metadata }, headers)
     .then(({ cart }) => cart)
     .catch((err) => {
       console.log(err)
@@ -760,3 +762,5 @@ export const getProductsByCategoryHandle = cache(async function ({
     nextPage,
   }
 })
+
+

@@ -1,4 +1,4 @@
-import { Cart, ProductCategory, ProductVariant, Region } from "@medusajs/medusa"
+import { Cart, Image, ProductCategory, ProductVariant, Region } from "@medusajs/medusa"
 import { PricedProduct } from "@medusajs/medusa/dist/types/pricing"
 import { ProductCollection } from "@medusajs/product"
 

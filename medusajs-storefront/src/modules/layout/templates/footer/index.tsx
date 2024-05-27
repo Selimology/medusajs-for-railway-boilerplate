@@ -38,7 +38,7 @@ const navigation = {
     { name: "Jewelry Information", href: "#" },
     { name: "Ring Sizing", href: "#" },
     { name: "Jewelry Care", href: "#" },
-    { name: "Bracelt Size Guide", href: "#" },
+    { name: "Braclet Size Guide", href: "#" },
     { name: "Necklace Size Guide", href: "#" },
     { name: "Earring Size Guide", href: "#" },
   ],
@@ -141,7 +141,7 @@ export default async function Footer() {
               <div className="md:grid md:grid-cols-1 md:gap-8">
                 {collections && collections.length > 0 && (
                   <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm font-semibold leading-6">
+                    <h3 className="text-sm font-semibold leading-6 text-white">
                       COLLECTIONS
                     </h3>
                     <ul role="list" className="mt-6" space-y-4>

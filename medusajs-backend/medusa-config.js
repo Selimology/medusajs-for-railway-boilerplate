@@ -72,6 +72,7 @@ const plugins = [
       },
     },
   },
+
   {
     resolve: `medusa-payment-stripe`,
     options: {
@@ -80,11 +81,28 @@ const plugins = [
     },
   },
   {
-    resolve: `medusa-plugin-mailchimp`,
+    resolve: `medusa-custom-attributes`,
+    options: {
+      enableUI: true,
+      projectConfig: {
+        store_cors: STORE_CORS,
+        admin_cors: ADMIN_CORS,
+      }
+    }
+  },
+{
+  resolve: `medusa-plugin-custom-dashboard`,
+  options: {
+      enableUI: true,
+  },
+},
+  {
+    resolve: `medusa-plugin-mailchimp-wine`,
     options: {
       api_key: process.env.MAILCHIMP_API_KEY,
-      newsletter_list_id:process.env.MAILCHIMP_NEWSLETTER_LIST_ID,
-    }
+      newsletter_list_id: 
+        process.env.MAILCHIMP_NEWSLETTER_LIST_ID,
+    },
   }
 ];
 
@@ -119,4 +137,7 @@ module.exports = {
   projectConfig,
   plugins,
   modules,
+  featureFlags: {
+    product_categories: true,
+  }
 };

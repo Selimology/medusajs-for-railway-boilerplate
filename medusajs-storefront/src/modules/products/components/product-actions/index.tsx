@@ -2,7 +2,7 @@
 
 import { Region } from "@medusajs/medusa"
 import { PricedProduct } from "@medusajs/medusa/dist/types/pricing"
-import { Button } from "@medusajs/ui"
+import { Button, Input } from "@medusajs/ui"
 import { isEqual } from "lodash"
 import { useParams } from "next/navigation"
 import { useEffect, useMemo, useRef, useState } from "react"
@@ -38,6 +38,9 @@ export default function ProductActions({
 
   const variants = product.variants
 
+  const [showExtraFields, setShowExtraFields] = useState(false)
+  const [firstName, setFirstName] = useState("")
+
   // initialize the option state
   useEffect(() => {
     const optionObj: Record<string, string> = {}
@@ -47,6 +50,10 @@ export default function ProductActions({
     }
 
     setOptions(optionObj)
+
+    if (product.collection && product.collection.handle === "personalized") {
+      setShowExtraFields(true)
+    }
   }, [product])
 
   // memoized record of the product's variants
@@ -118,6 +125,9 @@ export default function ProductActions({
       variantId: variant.id,
       quantity: 1,
       countryCode,
+      metadata: {
+        first_name: firstName,
+      },
     })
 
     setIsAdding(false)
@@ -144,13 +154,24 @@ export default function ProductActions({
               <Divider />
             </div>
           )}
+          {showExtraFields && (
+            <div className="flex flex-col gap-y-4">
+              <Input
+                placeholder="First Name"
+                id="firstName"
+                onChange={(e: any) => {
+                  setFirstName(e.target.value)
+                }}
+              />
+            </div>
+          )}
         </div>
 
         <ProductPrice product={product} variant={variant} region={region} />
 
         <Button
           onClick={handleAddToCart}
-          disabled={!inStock || !variant}
+          disabled={!inStock || !variant || !showExtraFields}
           variant="primary"
           className="w-full h-10"
           isLoading={isAdding}

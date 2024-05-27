@@ -62,6 +62,7 @@ const Item = ({ item, region, type = "full" }: ItemProps) => {
       <Table.Cell className="text-left">
         <Text className="txt-medium-plus text-ui-fg-base">{item.title}</Text>
         <LineItemOptions variant={item.variant} />
+        <div>{item.metadata["first_name"] as string}</div>
       </Table.Cell>
 
       {type === "full" && (
