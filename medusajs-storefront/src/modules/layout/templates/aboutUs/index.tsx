@@ -38,32 +38,37 @@ const categories = [
 
 export default function AboutUs() {
   return (
-    <div className="flex h-screen w-full justify-center pt-24 px-4 bg-white">
-      <div className=" w-[1000px]">
+    <div className="flex min-h-screen w-full justify-center pt-24 px-4 bg-white">
+      <div className="w-full max-w-5xl">
         <TabGroup>
-          <TabPanels className="mt-3 ">
+          <TabPanels className="mt-3">
             {categories.map(({ name, post }) => (
-              <TabPanel key={name} className=" bg-black/5 p-0 flex flex-row">
+              <TabPanel
+                key={name}
+                className="bg-black/5 p-0 flex flex-col md:flex-row"
+              >
                 <Image
                   src={post.img}
                   alt="necklaces"
                   width={500}
                   height={700}
-                  className="image-crop max-w-1/2 object-cover"
+                  className="w-full md:w-1/2 object-cover"
                 />
-                <div className="flex flex-col justify-end mb-10 ml-10 gap-7 mr-10 w-1/2">
-                  <p className=" font-thin">{post.header}</p>
-                  <p className="  ">{post.title}</p>
-                  <p className="  ">{post.description}</p>
+                <div className="flex flex-col justify-end mb-10 px-2 md:px-3 gap-5  w-full md:w-1/2 mt-5 md:mt-0 max-w-full overflow-hidden">
+                  <p className="font-thin">{post.header}</p>
+                  <p className="text-2xl md:text-4xl font-thin">{post.title}</p>
+                  <p className="text-sm md:text-base">{post.description}</p>
                 </div>
               </TabPanel>
             ))}
           </TabPanels>
-          <TabList className="flex gap-4 justify-center mt-4">
+          <TabList className="flex gap-2 md:gap-4 justify-center mt-4">
             {categories.map(({ name }) => (
               <Tab
                 key={name}
-                className="rounded-full py-1 px-3 text-sm/6 font-semibold text-black focus:outline-none data-[selected]:bg-black/10 data-[hover]:bg-black/5 data-[selected]:data-[hover]:bg-black/10 data-[focus]:outline-1 data-[focus]:outline-black"
+                className="
+                border-2 md:border-4 border-transparent py-1 px-3 text-xs md:text-sm font-semibold text-black focus:outline-none data-[selected]:border-b-black data-[hover]:bg-black/5 data-[selected]:data-[hover]:bg-black/10 data-[focus]:outline-1 data-[focus]:outline-black
+                "
               >
                 {name}
               </Tab>
