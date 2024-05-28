@@ -38,7 +38,7 @@ const categories = [
 
 export default function AboutUs() {
   return (
-    <div className="flex min-h-screen w-full justify-center pt-24 px-4 bg-white">
+    <div className="flex min-h-screen w-full justify-center pt-24 px-4 bg-white mb-0 md:mb-10 ">
       <div className="w-full max-w-5xl">
         <TabGroup>
           <TabPanels className="mt-3">
