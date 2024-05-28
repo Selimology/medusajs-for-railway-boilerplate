@@ -3,6 +3,7 @@ import React from "react"
 import Footer from "@modules/layout/templates/footer"
 import Nav from "@modules/layout/templates/nav"
 import SignupBanner from "./signupbanner"
+import AboutUs from "./aboutUs"
 
 const Layout: React.FC<{
   children: React.ReactNode
@@ -11,6 +12,7 @@ const Layout: React.FC<{
     <div>
       <Nav />
       <main className="relative">{children}</main>
+      <AboutUs />
       <SignupBanner />
       <Footer />
     </div>
