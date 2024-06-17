@@ -1,0 +1,93 @@
+{
+    "logoText": "JEWELLERYGBSHOP",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, adipisci perferendis tempore itaque consequuntur consequatur.",
+    "companyInformation": {
+      "title": "Company Information",
+      "items": [
+        {
+          "name": "About Us",
+          "href": "/about"
+        },
+        {
+          "name": "Terms of Service",
+          "href": "/terms-of-service"
+        },
+        {
+          "name": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "name": "Refund Policy",
+          "href": "/refund-policy"
+        }
+      ]
+    },
+    "customerCare": {
+      "title": "Customer Care",
+      "items": [
+        {
+          "name": "Contact Us",
+          "href": "/contact"
+        },
+        {
+          "name": "FAQ",
+          "href": "/faq"
+        },
+        {
+          "name": "Shipping Information",
+          "href": "/shipping-information"
+        },
+        {
+          "name": "Coupons & Promo Codes",
+          "href": "/coupons"
+        }
+      ]
+    },
+    "tips": {
+      "title": "Tips & Guides",
+      "items": [
+        {
+          "name": "Jewelry Information",
+          "href": "#"
+        },
+        {
+          "name": "Ring Sizing",
+          "href": "#"
+        },
+        {
+          "name": "Jewelry Care",
+          "href": "#"
+        },
+        {
+          "name": "Braclet Size Guide",
+          "href": "#"
+        },
+        {
+          "name": "Necklace Size Guide",
+          "href": "#"
+        },
+        {
+          "name": "Earring Size Guide",
+          "href": "#"
+        }
+      ]
+    },
+    "social": [
+      {
+        "name": "Facebook",
+        "href": "#",
+        "icon": "FaFacebook"
+      },
+      {
+        "name": "Instagram",
+        "href": "#",
+        "icon": "FaInstagram"
+      },
+      {
+        "name": "Pinterest",
+        "href": "#",
+        "icon": "FaPinterest"
+      }
+    ]
+  }
+  

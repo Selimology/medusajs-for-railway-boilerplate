@@ -1,3 +1,7 @@
+@import 'layout/instagram-carousel.scss';
+@import 'custom-swiper.scss';
+@import 'layout/testimonial.scss';
+@import 'icomoon/style.css';
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -108,9 +112,5 @@
 
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
-  }
-
-  .link-footer{
-    @apply text-sm leading-3 text-white cursor-pointer transition-opacity hover:opacity-70;
   }
 }

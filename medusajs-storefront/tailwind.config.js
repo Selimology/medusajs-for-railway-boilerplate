@@ -33,6 +33,8 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
+        'surface2': 'rgba(255,255,255,0.2)',
+        'surface1': 'rgba(255,255,255,0.1)',
       },
       borderRadius: {
         none: "0px",

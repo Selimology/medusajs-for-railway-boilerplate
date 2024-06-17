@@ -1,18 +1,28 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
-
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+import SignupBanner from "@modules/home/components/signupbanner"
+import InstagramCarousel from "@modules/home/components/instagram-carousel"
+import Testimonial from "@modules/home/components/testimonial"
+import testimonialData from "@lib/data/json/Testimonial.json"
+import signupData from "@lib/data/json/Signup.json"
+import benefitData from "@lib/data/json/Benefits.json"
+import instagramProofData from "@lib/data/json/Instagram/Instagram.json"
+import instagramHeaderData from "@lib/data/json/Instagram/InstagramHeader.json"
+import Benefit from "@modules/home/components/benefit"
+import FlashSale from "@modules/home/components/flashsale"
+import { CountdownProvider } from "@lib/context/countdown-context"
+import flashSaleData from "@lib/data/json/FlashSale.json"
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
   description:
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
 }
-
 const getCollectionsWithProducts = cache(
   async (
     countryCode: string
@@ -66,6 +76,8 @@ export default async function Home({
     return null
   }
 
+  const targetDate = new Date("2024-07-28")
+
   return (
     <>
       <Hero />
@@ -74,6 +86,17 @@ export default async function Home({
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
+      <CountdownProvider targetDate={targetDate}>
+        <FlashSale data={flashSaleData} />
+      </CountdownProvider>
+      <Benefit data={benefitData} />
+      <Testimonial limit={6} data={testimonialData} />
+      <SignupBanner data={signupData} />
+      <InstagramCarousel
+        proofData={instagramProofData}
+        instagramHeaderdata={instagramHeaderData}
+      />
+      {/* <ModalNewsletter /> */}
     </>
   )
 }

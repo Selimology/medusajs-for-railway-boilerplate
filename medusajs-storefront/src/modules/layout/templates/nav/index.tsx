@@ -1,5 +1,4 @@
 import { headers } from "next/headers"
-
 import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
@@ -12,7 +11,6 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline"
-import MobileMenu from "@modules/layout/components/mobile-menu"
 import { classNames } from "@lib/util/classnames"
 import NavbarMenu from "@modules/layout/components/mobile-menu"
 

@@ -1,0 +1,22 @@
+[
+    {
+        "title": "24/7 Customer Service",
+        "description": "Lorem ipsum dolor sit amet.",
+        "icon": "icon-phone-call"
+    },
+    {
+        "title":"14-Day Money Back",
+        "description":"If you're not satisfied with your purchase, simply reutnr it within 14 days for a refund",
+        "icon":"icon-return"
+    },
+    {
+        "title":"Our Guarantee",
+        "description":"We stand behind our porducts and services and guarantee your satisfaction",
+        "icon":"icon-guarantee"
+    },
+    {
+        "title":"Shipping Worldwide",
+        "description":"We ship our products worldwide, making them accessible to customers everywhere.",
+        "icon":"icon-delivery-truck"
+    }
+]

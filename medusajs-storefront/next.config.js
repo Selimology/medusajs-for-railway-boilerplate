@@ -1,3 +1,4 @@
+const { hostname } = require('os')
 const { withStoreConfig } = require('./store-config')
 const store = require('./store.config.json')
 
@@ -28,6 +29,10 @@ const nextConfig = withStoreConfig({
       {
         protocol: 'http',
         hostname: 'localhost',
+      },
+      {
+        protocol: 'https',
+        hostname:'asset.cloudinary.com'
       },
       {
         protocol: 'https',
