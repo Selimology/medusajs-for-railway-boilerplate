@@ -11,8 +11,8 @@ const Layout: React.FC<{
     <div>
       <Nav />
       <main className="relative">{children}</main>
-      <SignupBanner />
-      <Footer />
+      {/* <SignupBanner /> */}
+      {/* <Footer /> */}
     </div>
   )
 }
