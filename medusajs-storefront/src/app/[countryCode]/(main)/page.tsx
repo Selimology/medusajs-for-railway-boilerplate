@@ -24,7 +24,7 @@ import FlashSale from "@modules/home/components/flashsale"
 import { CountdownProvider } from "@lib/context/countdown-context"
 import flashSaleData from "@lib/data/json/FlashSale.json"
 import { useCollection } from "medusa-react"
-import LookBook from "@modules/home/components/lookbook"
+// import LookBook from "@modules/home/components/lookbook"
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -95,7 +95,7 @@ export default async function Home({
         </ul>
       </div>
 
-      <LookBook products={lookbookProductData} />
+      {/* <LookBook products={lookbookProductData} /> */}
       <CountdownProvider targetDate={targetDate}>
         <FlashSale data={flashSaleData} />
       </CountdownProvider>
