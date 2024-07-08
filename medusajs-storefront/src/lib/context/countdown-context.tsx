@@ -1,6 +1,6 @@
 "use client"
 
-import React, { createContext, useContext } from "react"
+import React, { createContext, useContext, useEffect, useState } from "react"
 
 interface CountdownContextValue {
   targetDate: Date
@@ -19,9 +19,15 @@ export const CountdownProvider: React.FC<CountdownProviderProps> = ({
   children,
   targetDate,
 }) => {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   return (
     <CountdownContext.Provider value={{ targetDate }}>
-      {children}
+      {isClient ? children : null}
     </CountdownContext.Provider>
   )
 }

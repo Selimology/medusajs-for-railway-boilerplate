@@ -27,5 +27,5 @@ export default async function StorePage({ searchParams, params }: Params) {
       page={page}
       countryCode={params.countryCode}
     />
-  )
+  ) 
 }

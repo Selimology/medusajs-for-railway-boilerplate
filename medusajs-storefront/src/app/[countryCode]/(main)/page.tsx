@@ -1,6 +1,11 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
-import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
+import {
+  getCollectionByHandle,
+  getCollectionsList,
+  getProductsList,
+  getRegion,
+} from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
@@ -13,10 +18,13 @@ import signupData from "@lib/data/json/Signup.json"
 import benefitData from "@lib/data/json/Benefits.json"
 import instagramProofData from "@lib/data/json/Instagram/Instagram.json"
 import instagramHeaderData from "@lib/data/json/Instagram/InstagramHeader.json"
+import lookbookProductData from "@lib/data/json/LookbookProducts.json"
 import Benefit from "@modules/home/components/benefit"
 import FlashSale from "@modules/home/components/flashsale"
 import { CountdownProvider } from "@lib/context/countdown-context"
 import flashSaleData from "@lib/data/json/FlashSale.json"
+import { useCollection } from "medusa-react"
+import LookBook from "@modules/home/components/lookbook"
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -86,12 +94,14 @@ export default async function Home({
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
+
+      <LookBook products={lookbookProductData} />
       <CountdownProvider targetDate={targetDate}>
         <FlashSale data={flashSaleData} />
       </CountdownProvider>
-      <Benefit data={benefitData} />
       <Testimonial limit={6} data={testimonialData} />
       <SignupBanner data={signupData} />
+      <Benefit data={benefitData} />
       <InstagramCarousel
         proofData={instagramProofData}
         instagramHeaderdata={instagramHeaderData}

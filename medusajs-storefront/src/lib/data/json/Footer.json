@@ -47,28 +47,28 @@
       "title": "Tips & Guides",
       "items": [
         {
-          "name": "Jewelry Information",
-          "href": "#"
+          "name": "Jewellery Information",
+          "href": "/jewelery-information"
         },
         {
           "name": "Ring Sizing",
-          "href": "#"
+          "href": "/ring-size"
         },
         {
-          "name": "Jewelry Care",
-          "href": "#"
+          "name": "Jewellery Care",
+          "href": "/Jewellery-care"
         },
         {
           "name": "Braclet Size Guide",
-          "href": "#"
+          "href": "/bracelet-size"
         },
         {
           "name": "Necklace Size Guide",
-          "href": "#"
+          "href": "/necklace-size"
         },
         {
           "name": "Earring Size Guide",
-          "href": "#"
+          "href": "/earring-size"
         }
       ]
     },

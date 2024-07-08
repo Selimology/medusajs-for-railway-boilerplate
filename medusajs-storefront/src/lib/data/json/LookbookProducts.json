@@ -1,0 +1,46 @@
+{
+  "titleText": "Discover the latest collection",
+  "buttonText": "Shop Collection",
+  "images": [
+    {
+      "image": {
+        "imageUrl": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
+        "alt": "This is a photo of the logo"
+      },
+      "products": [
+        {
+          "id": "1",
+          "name": "Off-The-Shoulder",
+          "price": 32.0,
+          "url": "/product/default?id=1",
+          "dotTop": "38%",
+          "dotLeft": "45%"
+        },
+        {
+          "id": "2",
+          "name": "Enes Shoulder Necklace",
+          "price": 45.0,
+          "url": "/product/default?id=1",
+          "dotTop": "45%",
+          "dotLeft": "38%"
+        }
+      ]
+    },
+    {
+      "image": {
+        "imageUrl": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
+        "alt": "This is a photo of the logo"
+      },
+      "products": [
+        {
+          "id": "3",
+          "name": "Mesh Shirt",
+          "price": 35.0,
+          "url": "/product/default?id=2",
+          "dotTop": "38%",
+          "dotLeft": "45%"
+        }
+      ]
+    }
+  ]
+}

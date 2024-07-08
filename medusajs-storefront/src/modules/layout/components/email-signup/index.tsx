@@ -56,7 +56,7 @@ const EmailSignUp = () => {
     <>
       <form onSubmit={subscribe} className="w-full h-full relative">
         <input
-          className="w-full h-full pl-4 pr-14 rounded-xl border"
+          className="w-full h-full pl-4 pr-14 rounded-xl rounded-xl border border-line"
           placeholder="Enter your email"
           type="email"
           name="email"
@@ -69,7 +69,7 @@ const EmailSignUp = () => {
         />
         <button
           type="submit"
-          className="bg-[#f4e079] text-black py-4 px-10 rounded-lg outline-none cursor-pointer hover:bg-[#e3c454] absolute top-1 bottom-1 right-1 flex items-center justify-center"
+          className=" bg-black text-white py-4 px-10 rounded-lg outline-none cursor-pointer hover:bg-[#e3c454] absolute top-1 bottom-1 right-1 flex items-center justify-center"
         >
           Subscribe
         </button>
@@ -98,11 +98,11 @@ const EmailSignUp = () => {
       )}
 
       {message?.type === "error" ? (
-        <div className="flex justify-center py-4 text-red-500">
+        <div className="flex text-black justify-center py-4 text-red-500">
           {message.description}
         </div>
       ) : (
-        <div className="flex justify-center py-4 text-green-500">
+        <div className="flex text-black justify-center py-4 text-green-500">
           {message?.description}
         </div>
       )}

@@ -1,6 +1,7 @@
 import { Metadata } from "next"
-import "styles/globals.scss"
+import "styles/styles.scss"
 import GlobalProvider from "../../GlobalProvider"
+import React from "react"
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:8000"
 

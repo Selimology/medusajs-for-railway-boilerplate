@@ -31,6 +31,20 @@ const CountdownTimer = () => {
       </div>
       <span> : </span>
       {/*Minutes */}
+      <div className="item flex flex-col items-center">
+        <div>
+          {timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}
+        </div>
+        <div className="font-medium">Minutes</div>
+      </div>
+      <span> : </span>
+      {/* Seconds */}
+      <div className="item flex flex-col items-center">
+        <div>
+          {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}
+        </div>
+        <div className="font-medium">Seconds</div>
+      </div>
     </div>
   )
 }

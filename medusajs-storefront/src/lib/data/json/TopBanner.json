@@ -1,0 +1,17 @@
+{
+    "slogan": "New customers save 10% with the code GET10",
+    "slides":[
+        {
+            "id": 1,
+            "bannerText":"Get 10% off on selected items"
+        },
+        {
+            "id":2,
+            "bannerText": "Free shipping on all orders over $50"
+        },
+        {
+            "id":3,
+            "bannerText":"10% off on all summer essentials!"
+        }
+    ]
+}
