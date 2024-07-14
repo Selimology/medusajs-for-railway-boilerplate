@@ -7,7 +7,7 @@ interface ProductType{
     dotLeft: string;
 }
 
-interface BackgroundImageType {
+export interface BackgroundImageType {
     imageUrl: string;
     products: ProductType[]
     alt: string;
@@ -20,7 +20,7 @@ interface LookBookMainContentType {
 }
 
 export interface LookBookType{
-    image: BackgroundImageType;
+    images: BackgroundImageType[];
     mainContent: LookBookMainContentType;
 }    
     

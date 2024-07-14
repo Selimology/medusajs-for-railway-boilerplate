@@ -19,7 +19,7 @@ export default function Footer({
   social,
 }: FooterProps) {
   return (
-    <footer className="bg-gray-50">
+    <footer className="bg-surface">
       {/* Accessibility */}
       <h2 id="footer-heading" className="sr-only">
         Footer

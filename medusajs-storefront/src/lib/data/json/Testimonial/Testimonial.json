@@ -9,22 +9,22 @@
         "address": "Tokyo, Japan",
         "description": "Anvouge's exceptional customer service and attention to detail make shopping with them a pleasure. They understand my fashion needs and help me find the perfect pieces every time.",
         "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
+            "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Favatar%2F1.png&w=2048&q=75"
         ],
-        "star": 5
+        "star": 5,
+        "buttonLink":"#",
+        "buttonText":"Shop from this store"
     },
     {
         "id": "2",
         "category": "fashion",
         "title": "Quality of Clothing!",
         "name": "Georgina S.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
+        "avatar": "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Favatar%2F1.png&w=2048&q=75",
         "date": "November 11, 2023",
         "address": "Madrid, Spain",
         "description": "I absolutely love this shop! The products are high-quality and the customer service is excellent. I always leave with exactly what I need and a smile on my face.",
         "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
             "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
         ],
         "star": 5

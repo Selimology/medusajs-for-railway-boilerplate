@@ -11,3 +11,8 @@ export interface TestimonialType {
     images: Array<string>,
     star: number,
 }
+
+export interface TestimonialShopLinkType{
+    buttonLink: string,
+    buttonText: string,
+}

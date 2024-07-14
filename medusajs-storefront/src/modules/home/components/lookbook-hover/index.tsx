@@ -2,24 +2,23 @@
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import Image from "next/image"
-import { LookBookType } from "types/lookbook"
+import { BackgroundImageType, LookBookType } from "types/lookbook"
 
-interface PopularProductHoverProps {
-  productData: LookBookType
+interface LookBookHoverProps {
+  lookbookData: BackgroundImageType
 }
 
-const LookBookHover = ({ productData }: PopularProductHoverProps) => {
+const LookBookHover = ({ lookbookData }: LookBookHoverProps) => {
   return (
     <>
       <Image
-        src={productData.image.imageUrl}
-        width={1000}
+        src={lookbookData.imageUrl}
+        alt={lookbookData.alt}
+        className="w-full h-full object-cover"
+        width={2000}
         height={1000}
-        alt={productData.image.alt}
-        priority={true}
-        className="lg:hw-full h-full object-cover"
       />
-      {/* {productData.products.map((product) => (
+      {lookbookData.products.map((product) => (
         <div
           key={product.id}
           className="dots absolute cursor-pointer"
@@ -40,7 +39,7 @@ const LookBookHover = ({ productData }: PopularProductHoverProps) => {
             </div>
           </LocalizedClientLink>
         </div>
-      ))} */}
+      ))}
     </>
   )
 }

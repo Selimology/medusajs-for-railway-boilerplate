@@ -1,12 +1,13 @@
 {
-  "titleText": "Discover the latest collection",
-  "buttonText": "Shop Collection",
+  "mainContent":{
+    "titleText": "Discover the latest collection",
+    "buttonText": "Shop Collection",
+    "buttonLink":"/shop"
+  },
   "images": [
     {
-      "image": {
-        "imageUrl": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "alt": "This is a photo of the logo"
-      },
+      "imageUrl": "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Fbanner%2Flookbook-jewelry1.png&w=3840&q=75",
+      "alt": "This is a photo of the logo",
       "products": [
         {
           "id": "1",
@@ -27,10 +28,8 @@
       ]
     },
     {
-      "image": {
-        "imageUrl": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "alt": "This is a photo of the logo"
-      },
+      "imageUrl": "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Fbanner%2Flookbook-jewelry1.png&w=3840&q=75",
+      "alt": "This is a photo of the logo",
       "products": [
         {
           "id": "3",
