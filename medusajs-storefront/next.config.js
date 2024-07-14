@@ -1,5 +1,7 @@
-const { withStoreConfig } = require("./store-config")
-const store = require("./store.config.json")
+const { hostname } = require('os')
+const { withStoreConfig } = require('./store-config')
+const store = require('./store.config.json')
+
 
 /**
  * @type {import('next').NextConfig}
@@ -10,12 +12,28 @@ const nextConfig = withStoreConfig({
   images: {
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "res.cloudinary.com",
+        protocol:'http',
+        hostname:'anvogue.vercel.app'
       },
       {
-        protocol: "https",
-        hostname: "res.cloudinary.com",
+        protocol:'https',
+        hostname: 'anvogue.vercel.app'
+      },
+      {
+        protocol: 'http',
+        hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'http',
+        hostname:'images.unsplash.com'
+      },
+      {
+        protocol: 'https',
+        hostname:'images.unsplash.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
       },
       {
         protocol: "https",
@@ -30,8 +48,13 @@ const nextConfig = withStoreConfig({
         hostname: "localhost",
       },
       {
-        protocol: "https",
-        hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
+        protocol: 'https',
+        hostname:'asset.cloudinary.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'medusa-public-images.s3.eu-west-1.amazonaws.com',
+
       },
       {
         protocol: "https",

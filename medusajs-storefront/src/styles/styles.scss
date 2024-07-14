@@ -1,6 +1,18 @@
+@import "layout/instagram-carousel.scss";
+@import "custom-swiper.scss";
+@import "layout/testimonial.scss";
+@import "icomoon/style.css";
+@import "layout/newsletter.scss";
+@import "layout/featured-product.scss";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "layout/banner.scss";
+@import "layout/benefit.scss";
+@import "layout/category-active.scss";
+@import "layout/collection.scss";
+@import "layout/resetstyle.scss";
+@import "layout/text-has-line-before.scss";
 
 @layer utilities {
   /* Chrome, Safari and Opera */
@@ -108,9 +120,5 @@
 
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
-  }
-
-  .link-footer{
-    @apply text-sm leading-3 text-white cursor-pointer transition-opacity hover:opacity-70;
   }
 }

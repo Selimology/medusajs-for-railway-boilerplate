@@ -1,0 +1,33 @@
+[
+    {
+      "subDisplayText": "Sale! Up To 50% Off!",
+      "displayText": "Summer Sale Collections",
+      "linkHref": "/shop/breadcrumb-img",
+      "imageSrc": "/images/slider/bg6-1.png",
+      "imageAlt": "bg6-1",
+      "imageWidth": 2000,
+      "imageHeight": 1936,
+      "imageClasses": "w-full sm:w-[55%] w-3/5 2xl:-right-[60px] -right-[16px] bottom-0"
+    },
+    {
+      "subDisplayText": "Sale! Up To 50% Off!",
+      "displayText": "Fashion for Every Occasion",
+      "linkHref": "/shop/breadcrumb-img",
+      "imageSrc": "/images/slider/bg6-2.png",
+      "imageAlt": "bg6-2",
+      "imageWidth": 2000,
+      "imageHeight": 1936,
+      "imageClasses": "w-full w-1/2 right-[0] sm:-bottom-7 bottom-0"
+    },
+    {
+      "subDisplayText": "Sale! Up To 50% Off!",
+      "displayText": "Stylish Looks for Any Season",
+      "linkHref": "/shop/breadcrumb-img",
+      "imageSrc": "/images/slider/bg6-3.png",
+      "imageAlt": "bg6-3",
+      "imageWidth": 2000,
+      "imageHeight": 2000,
+      "imageClasses": "w-full sm:w-3/5 w-2/3 2xl:-right-[60px] -right-[36px] bottom-0 sm:-bottom-[30px]"
+    }
+  ]
+  

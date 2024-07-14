@@ -1,0 +1,12 @@
+
+.newsletter-block.bg-green .button-main,
+.newsletter-block.bg-transparent .button-main {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.input-block {
+    input {
+        background: rgba($color: #FFFFFF, $alpha: 0.2);
+    }
+}

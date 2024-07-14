@@ -2,8 +2,9 @@ import { Metadata } from "next"
 
 import Footer from "@modules/layout/templates/footer"
 import Nav from "@modules/layout/templates/nav"
-import AboutUs from "@modules/layout/templates/aboutUs"
-import SignupBanner from "@modules/layout/templates/signupbanner"
+import footerData from "@lib/data/json/Footer.json"
+import topBannerdata from "@lib/data/json/TopBanner.json"
+import BannerTop from "@modules/layout/components/banner-top"
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:8000"
 
@@ -14,11 +15,13 @@ export const metadata: Metadata = {
 export default async function PageLayout(props: { children: React.ReactNode }) {
   return (
     <>
-      <Nav />
-      {props.children}
-      <AboutUs />
-      <SignupBanner />
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <BannerTop data={topBannerdata} />
+        <Nav />
+        <main className="flex-1">{props.children}</main>
+        <Footer {...footerData} />
+      </div>
+
     </>
   )
 }

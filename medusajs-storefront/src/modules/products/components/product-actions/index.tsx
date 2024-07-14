@@ -51,7 +51,7 @@ export default function ProductActions({
 
     setOptions(optionObj)
 
-    if (product.collection && product.collection.handle === "personalized") {
+    if (product.collection && product.collection.handle === "number") {
       setShowExtraFields(true)
     }
   }, [product])

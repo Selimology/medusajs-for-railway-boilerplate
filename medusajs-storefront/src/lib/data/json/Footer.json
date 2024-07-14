@@ -1,0 +1,93 @@
+{
+    "logoText": "JEWELLERYGBSHOP",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, adipisci perferendis tempore itaque consequuntur consequatur.",
+    "companyInformation": {
+      "title": "Company Information",
+      "items": [
+        {
+          "name": "About Us",
+          "href": "/about"
+        },
+        {
+          "name": "Terms of Service",
+          "href": "/terms-of-service"
+        },
+        {
+          "name": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "name": "Refund Policy",
+          "href": "/refund-policy"
+        }
+      ]
+    },
+    "customerCare": {
+      "title": "Customer Care",
+      "items": [
+        {
+          "name": "Contact Us",
+          "href": "/contact"
+        },
+        {
+          "name": "FAQ",
+          "href": "/faq"
+        },
+        {
+          "name": "Shipping Information",
+          "href": "/shipping-information"
+        },
+        {
+          "name": "Coupons & Promo Codes",
+          "href": "/coupons"
+        }
+      ]
+    },
+    "tips": {
+      "title": "Tips & Guides",
+      "items": [
+        {
+          "name": "Jewellery Information",
+          "href": "/jewelery-information"
+        },
+        {
+          "name": "Ring Sizing",
+          "href": "/ring-size"
+        },
+        {
+          "name": "Jewellery Care",
+          "href": "/Jewellery-care"
+        },
+        {
+          "name": "Braclet Size Guide",
+          "href": "/bracelet-size"
+        },
+        {
+          "name": "Necklace Size Guide",
+          "href": "/necklace-size"
+        },
+        {
+          "name": "Earring Size Guide",
+          "href": "/earring-size"
+        }
+      ]
+    },
+    "social": [
+      {
+        "name": "Facebook",
+        "href": "#",
+        "icon": "FaFacebook"
+      },
+      {
+        "name": "Instagram",
+        "href": "#",
+        "icon": "FaInstagram"
+      },
+      {
+        "name": "Pinterest",
+        "href": "#",
+        "icon": "FaPinterest"
+      }
+    ]
+  }
+  
