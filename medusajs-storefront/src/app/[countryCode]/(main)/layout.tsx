@@ -5,6 +5,7 @@ import Nav from "@modules/layout/templates/nav"
 import footerData from "@lib/data/json/Footer.json"
 import topBannerdata from "@lib/data/json/TopBanner.json"
 import BannerTop from "@modules/layout/components/banner-top"
+
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:8000"
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default async function PageLayout(props: { children: React.ReactNode }) {
         <main className="flex-1">{props.children}</main>
         <Footer {...footerData} />
       </div>
+
     </>
   )
 }

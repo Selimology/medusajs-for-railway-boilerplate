@@ -4,6 +4,7 @@ import Footer from "@modules/layout/templates/footer"
 import Nav from "@modules/layout/templates/nav"
 import SignupBanner from "../../home/components/signupbanner"
 
+
 const Layout: React.FC<{
   children: React.ReactNode
 }> = ({ children }) => {
